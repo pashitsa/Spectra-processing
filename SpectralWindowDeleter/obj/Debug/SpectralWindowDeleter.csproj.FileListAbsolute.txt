@@ -1,0 +1,162 @@
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+C:\Workspace\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+C:\Users\pavel_000\Documents\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+G:\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+G:\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+G:\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+G:\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+G:\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+G:\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+G:\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+G:\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+G:\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\Livecharts.dll
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.dll
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.dll
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\Livecharts.pdb
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\Livecharts.xml
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.pdb
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.xml
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.pdb
+G:\ChangedProgram\SpectralWindowDeleter\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.xml
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\Livecharts.dll
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.dll
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.dll
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\Livecharts.pdb
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\Livecharts.xml
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.pdb
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.xml
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.pdb
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.xml
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+G:\ChangedProgram\SpectralWindowDeleter(начальная отрисовка в форме)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(до изменений в дизайнере)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(до изменений в дизайнере)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(до изменений в дизайнере)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\Livecharts.dll
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\Livecharts.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\Livecharts.xml
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(чистенькая программа без spliter и прочей хуйни) — копия\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\Livecharts.dll
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.dll
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.dll
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\Livecharts.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\Livecharts.xml
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.xml
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.xml
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+G:\SpectralWindowDeleter(с начальным tablelayout)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.pdb
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.xml
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.pdb
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.xml
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.pdb
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.xml
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+C:\Workspace\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.dll
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.xml
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+C:\Users\pavel_000\Desktop\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe.config
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.exe
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.exe
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\SpectralWindowDeleter.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.dll
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.dll
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.dll
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\Livecharts.xml
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.WinForms.xml
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.pdb
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\bin\Debug\LiveCharts.Wpf.xml
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csprojResolveAssemblyReference.cache
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Form1.resources
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.Properties.Resources.resources
+G:\SpectralWindowDeleter(с начальным tablelayout и чекбоксами)\SpectralWindowDeleter\obj\Debug\SpectralWindowDeleter.csproj.GenerateResource.Cache

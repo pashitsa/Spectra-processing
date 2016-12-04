@@ -48,7 +48,7 @@ namespace SpectralWindowDeleter
                 textBox7.Enabled = true;
                 checkBox1.Enabled = true;
 
-                label8.Text = measurement.CoefficientSpectralUsing(1000).ToString();
+                label8.Text = measurement.CoefficientSpectralUsing(300).ToString();
 
                 List<double> Wave = measurement.DataWithHalfPoint(0, 0);
                 List<double> Transmission = measurement.DataWithHalfPoint(0, 1);

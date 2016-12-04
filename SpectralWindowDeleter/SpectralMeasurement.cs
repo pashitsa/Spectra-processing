@@ -180,25 +180,62 @@ namespace SpectralWindowDeleter
         
         public double CoefficientSpectralUsing(int T)
         {
-            double r = 0;
-            double rs = 0;
-            double c2 = 0.014388;
-            double c1 = 0.000000000000000347;
-            double lambda0;
-            double lambda1;
-            double lambda2;
+            double r1 = 0.0;
+            double r2 = 0.0;
+            double r3 = 0.0;
+            double rs = 0.0;
+            int c2 = 14388;
+            //int c1 = 374;//*10^12
+            double lambda0 = 0.0;
+            double lambda1 = 0.0;
+            double lambda2 = 0.0;
+            double h = 0.001;
+            System.Diagnostics.Debug.WriteLine(1);
+
+            
+            int k = 1;
+
+            while (lambda2 < filterTransmittance1[0])
+            {
+                lambda0 = lambda2;
+                lambda2 = lambda2 + h * k;
+                lambda1 = (lambda0 + lambda2) / 2;
+                r1 = r1 + ((1 / (((Math.Pow(lambda1, 5)) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * (lambda0 - lambda2));
+                k = k + 1;
+
+            }
+            System.Diagnostics.Debug.WriteLine(k);
+            System.Diagnostics.Debug.WriteLine(r1);
 
             for (int i = 0; i < filterTransmittance1.Count() - 1; i++)
             {
-                lambda0 = 10000000000/filterTransmittance1[i]; //полученная величина в мкм
-                lambda2 = 10000000000/filterTransmittance1[i + 1]; //полученная величина в мкм
+                lambda0 = 10000.0/filterTransmittance1[i]; //полученная величина в мкм
+                lambda2 = 10000.0/filterTransmittance1[i + 1]; //полученная величина в мкм
                 lambda1 = (lambda0 + lambda2) / 2; //полученная величина в мкм
 
-                //r = r + Math.Abs((1/(((lambda1* lambda1* lambda1* lambda1* lambda1) *(Math.Exp((c2)/(lambda1*T)) - 1))))*(lambda0 - lambda2));
-                r = 0.0002;
-                rs = rs + Math.Abs(((1*(filterTransmittance2[i+1] + filterTransmittance2[i])/2) / (((lambda1* lambda1* lambda1* lambda1* lambda1) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * (lambda0 - lambda2));
+                r2 = r2 + ((1/(((Math.Pow(lambda1, 5)) *(Math.Exp((c2)/(lambda1*T)) - 1))))*(lambda0 - lambda2));
+                rs = rs + (((1*(filterTransmittance2[i+1] + filterTransmittance2[i])/2) / (((Math.Pow(lambda1, 5)) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * (lambda0 - lambda2));
             }
-            return (r/rs);
+
+            
+            lambda2 = 10000.0/filterTransmittance1[filterTransmittance1.Count() - 1];
+
+            System.Diagnostics.Debug.WriteLine(r2);
+            System.Diagnostics.Debug.WriteLine(rs);
+
+            for (int j = 0; j < 10000; j++)
+            {
+                lambda0 = lambda2;
+                lambda2 = lambda2 + j * h;
+                lambda1 = (lambda0 + lambda2) / 2;
+                r3 = r3 + ((1 / (((Math.Pow(lambda1, 5)) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * (lambda0 - lambda2));
+               
+            }
+
+            System.Diagnostics.Debug.WriteLine(r3);
+            System.Diagnostics.Debug.WriteLine(rs);
+
+            return (((r2))/rs);///rs);
             
         }
         

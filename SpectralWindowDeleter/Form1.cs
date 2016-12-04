@@ -57,13 +57,15 @@ namespace SpectralWindowDeleter
 
 
                 chart1.Series["Series1"].Points.Clear();
-                
+                //Series wavelength = new Series("wavelength");
+
                 //chart1.ChartAreas.AxisX.ScrollBar.IsPositionedInside = true;
                 //добавляем значения в коллекцию
                 for (int i = 0; i < (Wave.Count()); i++)
                 {
 
-                    chart1.Series["Series1"].Points.AddXY(Wave[i], Transmission[i]);
+                    chart1.Series["Series1"].Points.AddXY(Wave[i],Transmission[i]);
+                    //chart1.Series["Series2"].Points.AddXY(10000/Wave[i], 1.0 - Transmission[i]);
                     chart1.Series["Series1"].ChartType = SeriesChartType.Line;
                     chart1.Series["Series1"].BorderWidth = 2;
 
@@ -71,6 +73,10 @@ namespace SpectralWindowDeleter
                 }
 
 
+                //branches.ChartType = SeriesChartType.Line;
+                
+                //chart1.ChartAreas[0].AxisX2.Maximum = 1D;
+                
 
                 //отрисовываем на графике вертикальные линии,пересекающие график на уровне 0.5
                 for (int i = 0; i < Transmittance.Count(); i++)
@@ -97,7 +103,7 @@ namespace SpectralWindowDeleter
 
                 //масштабирвоание chart1.ChartAreas[0].InnerPlotPosition.Width = chart1.ChartAreas[0].InnerPlotPosition.Width * ((float)1.1);
                 //chart1.Series[0].LegendText = "hello";
-                chart1.Series["0"].Label = "hello";
+                //chart1.Series["0"].Label = "hello";
 
                 for (int i = 0; i < Wave.Count(); i++)
                 {
@@ -138,6 +144,18 @@ namespace SpectralWindowDeleter
                 ////chart1.Series[0].Points[1].ToolTip = "Unknown";
 
                 //chart1.Series[0].ToolTip = "X = #VALX, Y = #VALY";
+
+                //отображение верхней оси в мкм
+                //CustomLabel wavelength = new CustomLabel();
+                //wavelength.Text = "Reterw";
+               
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Maximum = 1000;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Minimum = 1000;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Interval = 0.5;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.CustomLabels.Add(wavelength);
+                //chart1.ChartAreas["ChartArea1"].AxisX2.IsReversed = true;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Enabled = AxisEnabled.True;
+                ////chart1.ChartAreas["ChartArea1"].AxisX2.MajorTickMark = t
 
 
 
@@ -191,16 +209,19 @@ namespace SpectralWindowDeleter
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             chart1.ChartAreas[0].AxisX.Minimum = (double)numericUpDown1.Value;
+            //chart1.ChartAreas[0].AxisX2.Minimum = 10000/(double)numericUpDown1.Value;
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
             chart1.ChartAreas[0].AxisX.Maximum = (double)numericUpDown2.Value;
+            
         }
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
             chart1.ChartAreas[0].AxisX.Interval = (double)numericUpDown3.Value;
+            //chart1.ChartAreas[0].AxisX2.Interval = 10000/(double)numericUpDown3.Value;
         }
 
         public void chart1_MouseMove(object sender, MouseEventArgs e)

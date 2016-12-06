@@ -15,8 +15,17 @@ namespace SpectralWindowDeleter
             this.Name = Convert.ToString(k);
             this.ChartType = SeriesChartType.Line;
             this.Color = Color.Black;
-            this.BorderWidth = 2;
+            this.BorderWidth = 1;
             this.BorderDashStyle = ChartDashStyle.Dash;
+            this.IsVisibleInLegend = false;
+            //if((k == 0)||(k == 1)||(k == 2))
+            //{
+            //    this.Enabled = true;
+            //}
+            //else
+            //{
+            //    this.Enabled = false;
+            //}
         }
     }
 }

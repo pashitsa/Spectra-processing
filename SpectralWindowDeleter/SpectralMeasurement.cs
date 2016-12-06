@@ -20,8 +20,7 @@ namespace SpectralWindowDeleter
         List<double> forSplineTransmittancePoint;
         List<double> forSplineWaveValue;
 
-        List<double> filterTransmittanceWithHalfPoint1;
-        List<double> filterTransmittanceWithHalfPoint2;
+        
 
         double? LeftBorder;
         double? RightBorder;
@@ -58,40 +57,78 @@ namespace SpectralWindowDeleter
 
         public void LoadFilterTransmittance(string fileName)
         {
-            filterTransmittanceWithHalfPoint1 = new List<double>();
-            filterTransmittanceWithHalfPoint2 = new List<double>();
             forSplineTransmittancePoint = new List<double>();
             forSplineWaveValue = new List<double>();
-            System.Diagnostics.Debug.WriteLine(Math.Exp(1.0));
+            
+
             string[] filterTransmittance = File.ReadAllLines(fileName, Encoding.Default);
 
             foreach (string s in filterTransmittance)
             {
-                //System.Diagnostics.Debug.WriteLine(s);
+                
                 string[] split = s.Split(new Char[] { '\t' });
                 filterTransmittance1.Add(Convert.ToDouble(split[0].Replace('.', ',')));
                 filterTransmittance2.Add(Convert.ToDouble(split[1].Replace('.', ',')));
             }
 
-            //добавляем точку с пропусканием = 0.5
+            //составляем массив точек с чувствительностью на уровне 0.1, 0.5, 0.8, запоминая соответствующие волновые числа
             for (int j = 0; j < filterTransmittance2.Count() - 1; j++)
             {
-                if (((filterTransmittance2[j] <= 0.5) && (filterTransmittance2[j + 1] >= 0.5)) || ((filterTransmittance2[j] >= 0.5) && (filterTransmittance2[j + 1] <= 0.5)))
+                if (((filterTransmittance2[j] <= 0.1) && (filterTransmittance2[j + 1] >= 0.1)) || ((filterTransmittance2[j] >= 0.1) && (filterTransmittance2[j + 1] <= 0.1)))
                 {
-                    filterTransmittanceWithHalfPoint1.Add((filterTransmittance1[j] + filterTransmittance1[j + 1]) / 2);
-                    filterTransmittanceWithHalfPoint2.Add(0.5);
-                    forSplineTransmittancePoint.Add(0.5);//?????????????
+                    forSplineTransmittancePoint.Add(0.1);
                     forSplineWaveValue.Add((filterTransmittance1[j] + filterTransmittance1[j + 1]) / 2);
                 }
-
-                else
+                if (((filterTransmittance2[j] <= 0.5) && (filterTransmittance2[j + 1] >= 0.5)) || ((filterTransmittance2[j] >= 0.5) && (filterTransmittance2[j + 1] <= 0.5)))
                 {
-                    filterTransmittanceWithHalfPoint1.Add(filterTransmittance1[j]);
-                    filterTransmittanceWithHalfPoint2.Add(filterTransmittance2[j]);
+                    forSplineTransmittancePoint.Add(0.5);
+                    forSplineWaveValue.Add((filterTransmittance1[j] + filterTransmittance1[j + 1]) / 2);
+                }
+                if (((filterTransmittance2[j] <= 0.8) && (filterTransmittance2[j + 1] >= 0.8)) || ((filterTransmittance2[j] >= 0.8) && (filterTransmittance2[j + 1] <= 0.8)))
+                {
+                    forSplineTransmittancePoint.Add(0.8);
+                    forSplineWaveValue.Add((filterTransmittance1[j] + filterTransmittance1[j + 1]) / 2);
                 }
             }
-            //System.Diagnostics.Debug.WriteLine(filterTransmittance1.Count);
-            //System.Diagnostics.Debug.WriteLine(filterTransmittanceWithHalfPoint1.Count);
+            //удаляем близлежащие точки
+            for (int i = 0; i < forSplineWaveValue.Count() - 1; i++)
+            {
+                for (int j = i + 1; j < forSplineWaveValue.Count() - 1; j++)
+                {
+                    if (Math.Abs(forSplineWaveValue[i] - forSplineWaveValue[j]) < 10)
+                    {
+                        //forSplineWaveValue.RemoveAt(i);
+                        //forSplineTransmittancePoint.RemoveAt(i);
+                        forSplineTransmittancePoint[i] = 0;
+                        forSplineWaveValue[i] = 0;
+
+
+                    }
+                }
+            }
+            double w;
+            
+            for (int i = 0; i < forSplineWaveValue.Count() - 1; i++)
+            {
+                for (int j = i; j < forSplineWaveValue.Count() - 1; j++)
+                {
+                    if (forSplineWaveValue[j] > forSplineWaveValue[j + 1])
+                    {
+                        w = forSplineWaveValue[j];
+                        forSplineWaveValue[j] = forSplineWaveValue[j + 1];
+                        forSplineWaveValue[j + 1] = w;
+                        w = forSplineTransmittancePoint[j];
+                        forSplineTransmittancePoint[j] = forSplineTransmittancePoint[j + 1];
+                        forSplineTransmittancePoint[j + 1] = w;
+
+                    }
+                }
+            }
+
+
+
+            //System.Diagnostics.Debug.WriteLine(forSplineWaveValue.Count);
+
         }
 
         public void SaveProcessedFile(string fileName)
@@ -180,68 +217,36 @@ namespace SpectralWindowDeleter
         
         public double CoefficientSpectralUsing(int T)
         {
-            double r1 = 0.0;
-            double r2 = 0.0;
-            double r3 = 0.0;
+           
             double rs = 0.0;
-            int c2 = 14388;
-            //int c1 = 374;//*10^12
+            double c2 = 14388.0;
+            double c1 = 374*Math.Pow(10,6);//*10^12
             double lambda0 = 0.0;
             double lambda1 = 0.0;
             double lambda2 = 0.0;
-            double h = 0.001;
-            System.Diagnostics.Debug.WriteLine(1);
-
-            
-            int k = 1;
-
-            while (lambda2 < filterTransmittance1[0])
-            {
-                lambda0 = lambda2;
-                lambda2 = lambda2 + h * k;
-                lambda1 = (lambda0 + lambda2) / 2;
-                r1 = r1 + ((1 / (((Math.Pow(lambda1, 5)) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * (lambda0 - lambda2));
-                k = k + 1;
-
-            }
-            System.Diagnostics.Debug.WriteLine(k);
-            System.Diagnostics.Debug.WriteLine(r1);
+            double sigma = 5.67/Math.Pow(10, 8);
 
             for (int i = 0; i < filterTransmittance1.Count() - 1; i++)
             {
-                lambda0 = 10000.0/filterTransmittance1[i]; //полученная величина в мкм
-                lambda2 = 10000.0/filterTransmittance1[i + 1]; //полученная величина в мкм
+                lambda0 = Math.Pow(10, 4)/filterTransmittance1[i]; //полученная величина в мкм
+                lambda2 = Math.Pow(10, 4) / filterTransmittance1[i + 1]; //полученная величина в мкм
                 lambda1 = (lambda0 + lambda2) / 2; //полученная величина в мкм
 
-                r2 = r2 + ((1/(((Math.Pow(lambda1, 5)) *(Math.Exp((c2)/(lambda1*T)) - 1))))*(lambda0 - lambda2));
-                rs = rs + (((1*(filterTransmittance2[i+1] + filterTransmittance2[i])/2) / (((Math.Pow(lambda1, 5)) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * (lambda0 - lambda2));
+                rs = rs + (((c1*(filterTransmittance2[i+1] + filterTransmittance2[i])/2) / (((Math.Pow(lambda1, 5)) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * Math.Abs(lambda0 - lambda2));
             }
 
-            
-            lambda2 = 10000.0/filterTransmittance1[filterTransmittance1.Count() - 1];
-
-            System.Diagnostics.Debug.WriteLine(r2);
+            //System.Diagnostics.Debug.WriteLine(r3);
             System.Diagnostics.Debug.WriteLine(rs);
 
-            for (int j = 0; j < 10000; j++)
-            {
-                lambda0 = lambda2;
-                lambda2 = lambda2 + j * h;
-                lambda1 = (lambda0 + lambda2) / 2;
-                r3 = r3 + ((1 / (((Math.Pow(lambda1, 5)) * (Math.Exp((c2) / (lambda1 * T)) - 1)))) * (lambda0 - lambda2));
-               
-            }
+            return ((Math.Pow(T, 4) * sigma)/rs);
 
-            System.Diagnostics.Debug.WriteLine(r3);
-            System.Diagnostics.Debug.WriteLine(rs);
 
-            return (((r2))/rs);///rs);
-            
         }
-        
+
 
         //Добавим вручную точки на график со значением пропускания 0.5
         //запишем в массив номер этих точек и соответствующие волновые числа
+
         public List<double> DataWithHalfPoint(int i, int k)
         {
             //System.Diagnostics.Debug.WriteLine(forSplineTransmittancePoint.Count);
@@ -249,7 +254,7 @@ namespace SpectralWindowDeleter
 
             if (i == 0)
             {
-                if (k == 0)  return filterTransmittanceWithHalfPoint1; else return filterTransmittanceWithHalfPoint2;
+                if (k == 0)  return filterTransmittance1; else return filterTransmittance2;
             }
             else
             {
@@ -261,7 +266,7 @@ namespace SpectralWindowDeleter
 
         //public List<double> DataWithHalfPointOnEmums(Filters f)
         //{
-        //    //System.Diagnostics.Debug.WriteLine(forSplineTransmittancePoint.Count);
+        //  
 
         //    if (f == Filters.F00)
         //        return filterTransmittanceWithHalfPoint1;

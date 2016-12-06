@@ -12,6 +12,7 @@ namespace SpectralWindowDeleter
         public Form1()
         {
             InitializeComponent();
+           
             
         }
 
@@ -68,17 +69,9 @@ namespace SpectralWindowDeleter
                     chart1.Series[0].Points.AddXY(Wave[i],Transmission[i]);
                     chart1.Series[0].ChartType = SeriesChartType.Line;
                     chart1.Series[0].BorderWidth = 2;
-                    
-                    //chart1.Series[0].IsVisibleInLegend = true;
-                    
+                    //chart1.Series[0].IsXValueIndexed = false;
 
                 }
-
-                Legend legend2 = new Legend();
-                legend2.Title = "GTTFVH";
-                legend2.Enabled = true;
-                chart1.Legends.Add(legend2);
-
 
                 //отрисовываем на графике вертикальные линии,пересекающие график на уровне 0.1, 0.5, 0.8
                 for (int i = 0; i < Transmittance.Count(); i++)
@@ -89,17 +82,13 @@ namespace SpectralWindowDeleter
                     chart1.Series[Convert.ToString(i)].Points.AddXY(Value[i], Transmittance[i]);
                     if (i == 0) chart1.Series[Convert.ToString(i)].Enabled = false;
                     
-                    
-
                     DataAnnotation PointAnnotation = new DataAnnotation(i);
                     PointAnnotation.Text = Value[i].ToString("0.#") + " см^(-1)" + "\n" + (10000 / (Value[i])).ToString("0.00#") + " мкм"; ;
                     PointAnnotation.AnchorDataPoint = chart1.Series[Convert.ToString(i)].Points[1];
                     chart1.Annotations.Add(PointAnnotation);
-                    
-
                 }
 
-                //отрисовываем горизонтальные стриплайны, чтобы в дальнейшем прикрепить к ним текст
+                //отрисовываем горизонтальные стриплайны
                 for (int i = 0; i <= 11; i++)
                 {
                     HorizontalStripline stripline1 = new HorizontalStripline(i);
@@ -109,46 +98,88 @@ namespace SpectralWindowDeleter
                     stripline1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(204)));
                     
                     chart1.ChartAreas[0].AxisY2.StripLines.Add(stripline1);
-                    if (i == 9)
-                    {
-                        stripline1.Text = "K800 = " + measurement.CoefficientSpectralUsing(800).ToString("0");
-                        chart1.Legends[0].Title = "K800 = " + measurement.CoefficientSpectralUsing(800).ToString("0") + "\n"
-                            + "fsfsfsdfs";
-                        
-                    }
+                    //if (i == 9)
+                    //{
+                    //    stripline1.Text = "K800 = " + measurement.CoefficientSpectralUsing(800).ToString("0");
+                    //}
                     
 
                 }
 
-               
+                //Визуализация легенды
+                Legend legend1 = new Legend();
+                LegendItem legendItem1 = new LegendItem();
+                LegendItem legendItem2 = new LegendItem();
+                LegendItem legendItem3 = new LegendItem();
+                LegendItem legendItem4 = new LegendItem();
+                LegendItem legendItem5 = new LegendItem();
+                LegendCell legendCell1 = new LegendCell();
+                LegendCell legendCell2 = new LegendCell();
+                LegendCell legendCell3 = new LegendCell();
+                LegendCell legendCell4 = new LegendCell();
+                LegendCell legendCell5 = new LegendCell();
+
+                legendCell1.Text = "К300 = " + measurement.CoefficientSpectralUsing(300).ToString("0");
+                legendCell2.Text = "К303 = " + measurement.CoefficientSpectralUsing(303).ToString("0");
+                legendCell3.Text = "К500 = " + measurement.CoefficientSpectralUsing(500).ToString("0");
+                legendCell4.Text = "К800 = " + measurement.CoefficientSpectralUsing(800).ToString("0");
+                legendCell5.Text = "К1000 = " + measurement.CoefficientSpectralUsing(1000).ToString("0");
+                legendItem1.Cells.Add(legendCell1);
+                legendItem2.Cells.Add(legendCell2);
+                legendItem3.Cells.Add(legendCell3);
+                legendItem4.Cells.Add(legendCell4);
+                legendItem5.Cells.Add(legendCell5);
+                legend1.CustomItems.Add(legendItem1);
+                legend1.CustomItems.Add(legendItem2);
+                legend1.CustomItems.Add(legendItem3);
+                legend1.CustomItems.Add(legendItem4);
+                legend1.CustomItems.Add(legendItem5);
+
+                legend1.BackColor = System.Drawing.Color.LightYellow;
+                legend1.BorderColor = System.Drawing.Color.Black;
+                legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column;
+                legend1.Name = "Legend1";
+                legend1.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide;
+                legend1.TitleFont = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.World, ((byte)(204)));
+                legend1.Title = "Коэффициенты пересчета";
+                legend1.TitleSeparator = System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.DotLine;
+                this.chart1.Legends.Add(legend1);
+
+                //legend1.Enabled = true;
+
+
+
+
+
+
 
 
 
                 // chart1.ChartAreas.AxisX.ScrollBar.IsPositionedInside = true;
 
-                    //масштабирвоание chart1.ChartAreas[0].InnerPlotPosition.Width = chart1.ChartAreas[0].InnerPlotPosition.Width * ((float)1.1);
-                    //chart1.Series[0].LegendText = "hello";
-                    //chart1.Series["0"].Label = "hello";
+                //масштабирвоание chart1.ChartAreas[0].InnerPlotPosition.Width = chart1.ChartAreas[0].InnerPlotPosition.Width * ((float)1.1);
+                //chart1.Series[0].LegendText = "hello";
+                //chart1.Series["0"].Label = "hello";
 
-                    //эта штука работает
-                    ////chart1.Series[0].ToolTip = "Percent: #PERCENT";
-                    ////chart1.Series[0].LegendToolTip = "Income in #LABEL  is #VAL million";
-                    ////chart1.Series[0].LabelToolTip = "#PERCENT";
-                    ////chart1.Series[0].Points[1].ToolTip = "Unknown";
+                //эта штука работает
+                ////chart1.Series[0].ToolTip = "Percent: #PERCENT";
+                ////chart1.Series[0].LegendToolTip = "Income in #LABEL  is #VAL million";
+                ////chart1.Series[0].LabelToolTip = "#PERCENT";
+                ////chart1.Series[0].Points[1].ToolTip = "Unknown";
 
-                    //chart1.Series[0].ToolTip = "X = #VALX, Y = #VALY";
+                //chart1.Series[0].ToolTip = "X = #VALX, Y = #VALY";
 
-                    //отображение верхней оси в мкм
-                    //CustomLabel wavelength = new CustomLabel();
-                    //wavelength.Text = "Reterw";
+                //отображение верхней оси в мкм
+                //CustomLabel wavelength = new CustomLabel();
+                //wavelength.Text = "Reterw";
 
-                    //chart1.ChartAreas["ChartArea1"].AxisX2.Maximum = 1000;
-                    //chart1.ChartAreas["ChartArea1"].AxisX2.Minimum = 1000;
-                    //chart1.ChartAreas["ChartArea1"].AxisX2.Interval = 0.5;
-                    //chart1.ChartAreas["ChartArea1"].AxisX2.CustomLabels.Add(wavelength);
-                    //chart1.ChartAreas["ChartArea1"].AxisX2.IsReversed = true;
-                    //chart1.ChartAreas["ChartArea1"].AxisX2.Enabled = AxisEnabled.True;
-                    ////chart1.ChartAreas["ChartArea1"].AxisX2.MajorTickMark = t;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Maximum = 1000;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Minimum = 1000;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Interval = 0.5;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.CustomLabels.Add(wavelength);
+                //chart1.ChartAreas["ChartArea1"].AxisX2.IsReversed = true;
+                //chart1.ChartAreas["ChartArea1"].AxisX2.Enabled = AxisEnabled.True;
+                ////chart1.ChartAreas["ChartArea1"].AxisX2.MajorTickMark = t;
 
             }
         }
